@@ -1,0 +1,8 @@
+const EventEmitter = require('events')
+const emitter = new EventEmitter()
+
+emitter.on('m',function(one,two){
+    console.log("Message successfully logged : " + one +" "+ two)
+});
+
+emitter.emit("m","one","two")
